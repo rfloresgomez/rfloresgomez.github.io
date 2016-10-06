@@ -1,0 +1,19 @@
+div.cabecera {
+    color: white;
+    text-align: center;
+    background-color: indigo;
+}
+
+div > p {
+    color: burlywood;
+}
+
+* > img {
+    width: 10em;
+    height: 10em;
+}
+
+.cabecera a {
+    text-decoration: none;
+    color: white;
+}
