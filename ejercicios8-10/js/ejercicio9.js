@@ -1,6 +1,6 @@
 function info(cadena) {
     var resultado = "La cadena \""+cadena+"\" ";
-// Comprobar mayúsculas y minúsculas
+
     if(cadena == cadena.toUpperCase()) {
         resultado += " está formada sólo por mayúsculas";
     }
@@ -12,5 +12,5 @@ function info(cadena) {
     }
     return resultado;
 }
-alert(info("OVNI = OBJETO VOLADOR NO IDENTIFICADO"));
-alert(info("En un lugar de la mancha..."));
+alert(info("FRASE EN MAYÚSCULA"));
+alert(info("frase en minúscula"));
