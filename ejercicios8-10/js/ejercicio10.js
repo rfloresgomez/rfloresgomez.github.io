@@ -6,7 +6,7 @@ function palindromo(cadena) {
     var letrasEspacios = cadenaOriginal.split("");
 
     var cadenaSinEspacios = "";
-    for (i in letrasEspacios) {
+    for (let i in letrasEspacios) {
         if (letrasEspacios[i] != " ") {
             cadenaSinEspacios += letrasEspacios[i];
         }
@@ -14,10 +14,10 @@ function palindromo(cadena) {
     var letras = cadenaSinEspacios.split("");
     var letrasReves = cadenaSinEspacios.split("").reverse();
 
-    var iguales = true;
-    for (i in letras) {
+    var iguales;
+    for (let i in letras) {
         if (letras[i] == letrasReves[i]) {
-
+            iguales = true;
         }
         else {
 

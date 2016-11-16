@@ -1,8 +1,8 @@
 var valores = [true, 5, false, "hola", "adios", 2];
 // Cual de los 2 elementos de texto es mayor
 // Si el resultado es true, el primer texto es mayor
-var resultado = valores[3] > valores[4];
-alert(resultado);
+var resultado = valores[3].length > valores[4].length;
+alert(valores[3]+' es mayor que '+valores[4]+' '+resultado);
 // Combinar valores booleanos
 var valor1 = valores[0];
 var valor2 = valores[2];
