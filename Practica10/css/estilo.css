@@ -171,6 +171,7 @@ footer {
     height: 100px;
     margin: 0 auto;
     background: url("../img/muro.png");
+    background-size: 33.3%;
 }
 
 .separador{
