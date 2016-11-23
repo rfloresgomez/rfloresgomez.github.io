@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head itemscope itemtype="http://schema.org/Person">
+<head>
     <meta charset="UTF-8">
-    <title itemprop="author">Roberto Carlos Flores Gómez</title>
+    <title>Roberto Carlos Flores Gómez</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <script type="text/javascript" src="js/canvas.js"></script>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Person">
 <div id="header">
     <header>
         <h1>Anécdotas sobre Trump</h1>
@@ -85,6 +85,19 @@
         </section>
     </main>
     <aside>
+
+        <section>
+            <article>
+                <h3>Sobre mí</h3>
+                <p>
+                    Soy <span itemprop="name">Roberto Carlos Flores Gómez</span>,
+                    <span itemprop="jobTitle">estudiante de Desarrollo de Aplicaciones Web</span> en
+                    <span itemprop="affiliation">IES Grán Capitán</span> de Córdoba.
+                    <div id="mifoto"></div>
+                </p>
+            </article>
+        </section>
+
         <section>
             <article>
                 <h3>Redes Sociales</h3>
@@ -95,7 +108,7 @@
             Twitter<a href="https://twitter.com/RealDonalDrumpf">
             <div class="redes" id="twitter"></div>
         </a>
-            Github<a href="https://github.com/rfloresgomez">
+            Github<a href="https://github.com/rfloresgomez/rfloresgomez.github.io/tree/master/Practica10">
             <div class="redes" id="github"></div>
         </a>
         </section>
@@ -104,7 +117,10 @@
 
 <footer class="wrapper">
     <div class="bandera"></div>
-    <div id="footer"><h3>R. Carlos Flores Gómez (c)Copyright</h3></div>
+    <div id="footer">
+        <h3 itemprop="author">R. Carlos Flores Gómez</h3>
+        <span itemprop="email">r.carlosfloresgomez@gmail.com</span>
+    </div>
     <div class="bandera"></div>
 </footer>
 </body>
