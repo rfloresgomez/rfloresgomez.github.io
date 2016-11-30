@@ -11,6 +11,22 @@ body {
     border-radius: 20px 20px 0px 0px;
 }
 
+#annadir{
+    width: 50px;
+    height:50px;
+    background: url("../img/annadir.svg");
+    background-size: 100% 100%;
+    position:fixed !important; left:0px; top:0px; z-index:10 !important
+}
+
+#arriba{
+    width: 50px;
+    height:50px;
+    background: url("../img/arriba.svg");
+    background-size: 100% 100%;
+    position:fixed !important; right:0px; bottom:0px; z-index:10 !important
+}
+
 #header ul, footer ul{
     margin: 0;
     list-style: none;
@@ -40,6 +56,7 @@ body {
 main {
     width: 70%;
     display: inline-block;
+    margin: 15px;
 }
 
 aside {

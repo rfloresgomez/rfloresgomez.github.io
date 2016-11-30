@@ -12,12 +12,12 @@
    width="210mm"
    height="297mm"
    viewBox="0 0 744.09448819 1052.3622047"
-   id="svg5435"
+   id="svg4810"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="annadir.svg">
+   sodipodi:docname="arriba.svg">
   <defs
-     id="defs5437" />
+     id="defs4812" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-487.85714"
+     inkscape:cx="-56.428571"
      inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -37,14 +37,14 @@
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
-     id="metadata5440">
+     id="metadata4815">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -53,28 +53,25 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       transform="matrix(21.118343,0,0,20.949282,-578.89688,-5667.6759)"
-       id="Icon_Plus"
+       transform="matrix(20.357565,0,0,21.87912,-2578.9899,-7011.6487)"
+       id="Icon_Arrow_Up"
        style="fill:#45ada8;fill-opacity:1">
       <path
          style="fill:#45ada8;fill-opacity:1"
          inkscape:connector-curvature="0"
-         d="m 45,311.9 c -9.3,0 -16.9,-7.6 -16.9,-16.9 0,-9.3 7.6,-16.9 16.9,-16.9 9.3,0 16.9,7.6 16.9,16.9 0,9.3 -7.6,16.9 -16.9,16.9 z m 0,-32 c -8.3,0 -15.1,6.8 -15.1,15.1 0,8.3 6.8,15.1 15.1,15.1 8.3,0 15.1,-6.8 15.1,-15.1 0,-8.3 -6.8,-15.1 -15.1,-15.1 z"
-         id="path50" />
+         d="m 145,361.9 c -9.3,0 -16.9,-7.6 -16.9,-16.9 0,-9.3 7.6,-16.9 16.9,-16.9 9.3,0 16.9,7.6 16.9,16.9 0,9.3 -7.6,16.9 -16.9,16.9 z m 0,-32 c -8.3,0 -15.1,6.8 -15.1,15.1 0,8.3 6.8,15.1 15.1,15.1 8.3,0 15.1,-6.8 15.1,-15.1 0,-8.3 -6.8,-15.1 -15.1,-15.1 z"
+         id="path112" />
+      <polygon
+         style="fill:#45ada8;fill-opacity:1"
+         points="145,335.7 154.7,345.3 153.3,346.7 145,338.3 136.7,346.7 135.3,345.3 "
+         id="polygon114" />
       <rect
          style="fill:#45ada8;fill-opacity:1"
-         x="36"
-         y="294"
-         width="18"
-         height="2"
-         id="rect52" />
-      <rect
-         style="fill:#45ada8;fill-opacity:1"
-         x="44"
-         y="286"
+         x="144"
+         y="337"
          width="2"
-         height="18"
-         id="rect54" />
+         height="17"
+         id="rect116" />
     </g>
   </g>
 </svg>
