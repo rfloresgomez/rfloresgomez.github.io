@@ -40,7 +40,7 @@ body {
     border-radius: 7px 14px;
     background-color: #45ADA8;
     box-shadow: 2px 2px 3px white;
-    transition: all 1s;
+    transition: box-shadow 1s;
 }
 
 #header li:hover {
@@ -138,6 +138,14 @@ footer li{
     margin-bottom: 10px;
     transition: all 1s;
     transform: scale(1, 1);
+}
+
+textarea{
+    resize: none;
+    height: 100px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 
