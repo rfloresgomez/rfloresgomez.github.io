@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Últimas Tareas</title>
+    <title>Roberto Carlos Flores Gómez</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/calendario.css">
+    <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
+    <script type="text/javascript" src="js/calendario.js"></script>
+</head>
+<body itemscope itemtype="http://schema.org/Person">
+<div id="header">
+    <header>
+        <h1>Gestor de Tareas</h1>
+
+        <h2>Últimas Tareas</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Últimas Tareas</a></li>
+            <li><a href="#">DIW</a></li>
+            <li><a href="#">DWEC</a></li>
+            <li><a href="#">DWES</a></li>
+            <li><a href="#">DAW</a></li>
+            <li><a href="#">HLC</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="principal">
+    <main>
+        <section>
+            <header>
+                <div class="controles">
+                    <a href="#"><div class="editar"></div></a>
+                    <a href="#"><div class="eliminar"></div></a>
+                </div>
+                <h4>Gestor de Tareas.</h4>
+            </header>
+            <article>
+                <div class="descripcion">
+                    <ul>
+                        <li>El diseño será libre y propio de cada uno.</li>
+                        <li>Para cada tarea, debéis implementar los siguientes campos: nombre tarea, módulo, fecha de
+                            entrega y
+                            descripción.
+                        </li>
+                        <li>Podéis usar todos los recursos que queráis, siempre que no sean plantillas(imágenes, fondos,
+                            texturas, fuentes, iconos, canvas, svg,...)
+                        </li>
+                        <li>Debes implementar la práctica con estilo, coherencia y un buen equilibrio visual (con todo
+                            lo que
+                            conlleva), velocidad de carga, compatibilidad, ...
+                        </li>
+                        <li>Usa en la medida de lo posible, siempre que no incumpla el punto anterior los estilos de
+                            CSS3 que
+                            puedas. Debe ser a tu criterio, y deberás defenderlo y justificarlo a tu profesor.
+                        </li>
+                        <li>Los formularios deberán ir con estilo. Este además debe cambiar su estilo cuando algún valor
+                            requerido no se ha introducido o no es válido, y alguno nuevo investigado por vosotros, como
+                            mínimo.
+                        </li>
+                        <li>La página debe poder adaptarse lo mejor posible a diferentes resoluciones y tamaños.</li>
+                        <li>Es obligatorio la creación de un mockup. Debes subirla también en la entrega.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>DIW</h4>
+                    <h4 class="fecha">29/11/2016</h4>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <header>
+                <div class="controles">
+                    <a href="#"><div class="editar"></div></a>
+                    <a href="#"><div class="eliminar"></div></a>
+                </div>
+                <h4>Múltiples Ventanas.</h4>
+            </header>
+            <article>
+                <div class="descripcion">
+                    <p>Crea la siguiente página Web donde el botón crea cinco nuevas ventanas ubicadas en la esquina tal y como se muestran.
+                        Métodos a utilizar:</p>
+                    <ul>
+                        <li>
+                            miVentana = window.open('','','width=200,height=200');
+                        </li>
+                        <li>
+                            miVentana.document.open();
+                        </li>
+                        <li>
+                            miVentana.document.write()
+                        </li>
+                        <li>
+                            Añade el esqueleto básico: html, head, title, body, ul...
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>DWEC</h4>
+                    <h4 class="fecha">1/12/2016</h4>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <aside>
+
+        <div id="calendario">
+            <div id="anterior" onclick="mesantes()"></div>
+            <div id="posterior" onclick="mesdespues()"></div>
+            <h5 id="titulos"></h5>
+            <table id="diasc">
+                <tr id="fila0">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr id="fila1">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila2">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila3">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila4">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila5">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila6">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+    </aside>
+</div>
+
+<footer>
+    <p>Roberto Carlos Flores Gómez</p>
+    <ul>
+        <li><a href="https://www.facebook.com/robertocarlos.floresgomez"><div class="redes" id="facebook"></div></a></li>
+        <li><a href="https://twitter.com/batato1994"><div class="redes" id="twitter"></div></a></li>
+        <li><a href="#"><div class="redes" id="github"></div></a></li>
+    </ul>
+</footer>
+</body>
+</html>

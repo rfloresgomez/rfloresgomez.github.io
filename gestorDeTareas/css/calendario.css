@@ -1,0 +1,59 @@
+/*instrucciones generales*/
+
+/*div principal del calendario*/
+#calendario {
+    width: 100%;
+    background-color: #547980;
+    text-align: center;
+    border-radius: 15px;
+    padding: 7px;
+    margin: 30px;
+}
+
+
+/*tabla del calendario*/
+
+#diasc th, #diasc td {
+    width: 70px;
+    height: 30px;
+}
+
+#diasc th {
+    color: #9DE0AD;
+    background-color: #45ADA8
+}
+
+#diasc td {
+    color: #000000;
+    background-color: #9DE0AD
+}
+
+/*cabecera del calendario*/
+#anterior {
+    float: left;
+    width: 100px;
+    padding: 0.5em 0.1em;
+    cursor: pointer;
+}
+
+#posterior {
+    float: right;
+    width: 100px;
+    padding: 0.5em 0.1em;
+    cursor: pointer;
+}
+
+#anterior:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#posterior:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#titulos {
+    font-size: 30px;
+    margin: 0;
+}
