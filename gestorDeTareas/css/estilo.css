@@ -16,7 +16,9 @@ body {
     height:50px;
     background: url("../img/annadir.svg");
     background-size: 100% 100%;
-    position:fixed !important; left:0px; top:0px; z-index:10 !important
+    position:fixed !important;
+    left:0;
+    top:0;
 }
 
 #arriba{
@@ -24,7 +26,9 @@ body {
     height:50px;
     background: url("../img/arriba.svg");
     background-size: 100% 100%;
-    position:fixed !important; right:0px; bottom:0px; z-index:10 !important
+    position:fixed !important;
+    right:0;
+    bottom:0;
 }
 
 #header ul, footer ul{
@@ -140,13 +144,27 @@ footer li{
     transform: scale(1, 1);
 }
 
+input, textarea, select{
+    border-radius: 5px;
+    margin: 8px;
+}
+
 textarea{
     resize: none;
     height: 100px;
-    width: 400px;
-    border-radius: 5px;
+    width: 300px;
     font-size: 15px;
 }
+
+[required]{
+    box-shadow: 1px 1px 7px green;
+}
+
+input:invalid, textarea:invalid{
+    border-color: red;
+}
+
+
 
 
 

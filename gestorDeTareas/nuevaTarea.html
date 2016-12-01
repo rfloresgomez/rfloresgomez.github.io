@@ -5,7 +5,9 @@
     <title>Nueva Tarea</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/calendario.css">
     <link href="https://fonts.googleapis.com/css?family=Yrsa" rel="stylesheet">
+    <script type="text/javascript" src="js/calendario.js"></script>
 </head>
 <body itemscope itemtype="http://schema.org/Person">
 <div id="header">
@@ -34,27 +36,30 @@
                     <table>
                         <tr>
                             <td>Título</td>
-                            <td><input type="text" name="titulo" id="titulo"></td>
-                        </tr>
-                        <tr>
-                            <td>Descripción</td>
-                            <td><textarea></textarea></td>
-                        </tr>
-                        <tr>
-                            <td>Fecha de entrega </td>
-                            <td><input type="date"></td>
+                            <td><input type="text" name="titulo" id="titulo" required></td>
                         </tr>
                         <tr>
                             <td>Módulo</td>
                             <td>
-                                <input type="radio" name="modulo" value="diw" checked> DIW<br/>
-                                <input type="radio" name="modulo" value="dwec"> DWEC<br/>
-                                <input type="radio" name="modulo" value="dwes"> DWES<br/>
-                                <input type="radio" name="modulo" value="daw"> DAW<br/>
-                                <input type="radio" name="modulo" value="hlc"> HLC
+                                <select name="modulo" required>
+                                    <option value="diw">DIW</option>
+                                    <option value="dwec">DWEC</option>
+                                    <option value="dwes">DWES</option>
+                                    <option value="daw">DAW</option>
+                                    <option value="hlc">HLC</option>
+                                </select>
                             </td>
                         </tr>
                         <tr>
+                            <td>Descripción</td>
+                            <td><textarea required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Fecha de entrega </td>
+                            <td><input type="date" required></td>
+                        </tr>
+                        <tr>
+                            <td></td>
                             <td><input type="submit" name="Enviar"></td>
                         </tr>
                     </table>
@@ -64,6 +69,76 @@
 
     </main>
     <aside>
+        <div id="calendario">
+            <div id="anterior" onclick="mesantes()"></div>
+            <div id="posterior" onclick="mesdespues()"></div>
+            <h5 id="titulos"></h5>
+            <table id="diasc">
+                <tr id="fila0">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr id="fila1">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila2">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila3">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila4">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila5">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="fila6">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
     </aside>
     </div>
 
