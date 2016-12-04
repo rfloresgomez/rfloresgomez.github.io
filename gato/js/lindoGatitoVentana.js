@@ -8,6 +8,7 @@
     let edad;
     let jugar;
     let datos;
+    let anios;
 
     let mostrarDatos = function () {
         datos.innerHTML = "<ul>" +
@@ -60,6 +61,7 @@
         edad = document.getElementById("edad");
         jugar = document.getElementById("jugar");
         datos = document.getElementById("datos");
+        anios = document.getElementById("anios");
 
         mostrarDatos();
         comer.addEventListener("click", darDeComer);

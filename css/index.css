@@ -1,15 +1,16 @@
 body{
-    background-color: lightskyblue;
+    background-color: #343838;
 }
 
 div.cabecera {
-    color: white;
+    color: #008C9E;
     text-align: center;
-    background-color: indigo;
+    background-color: #005F6B;
+    border-radius: 5px 18px;
 }
 
 div > p {
-    color: burlywood;
+    color: #00B4CC;
 }
 
 * > img {
@@ -21,9 +22,9 @@ ul{
     list-style: none;
 }
 
-.cabecera a {
+a {
     text-decoration: none;
-    color: white;
+    color: 00B4CC;
 }
 
 .listado{
@@ -31,8 +32,8 @@ ul{
     width: 300px;
     padding: 5px;
     margin: 25px;
-    background-color: dodgerblue;
-    border: groove blue 1px;
+    background-color: #00B4CC;
+    border: groove #00DFFC 1px;
     border-radius: 7px 2px 7px 2px;
     box-shadow: 0px 0px 6px black;
     transform: scale(1, 1);

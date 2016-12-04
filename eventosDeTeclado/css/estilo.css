@@ -1,0 +1,8 @@
+.eventos{
+    display: inline-block;
+    color: white;
+    margin: 10px;
+    border: dotted black;
+    width: 30%;
+    height: 300px;
+}

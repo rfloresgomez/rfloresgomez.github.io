@@ -7,7 +7,7 @@
         let contenido = document.getElementById("contenido");
         let mostrarHora = function(){
             let hora = new Date();
-            contenido.innerHTML= hora.getHours()+":"+hora.getMinutes()+":"+hora.getSeconds();
+            contenido.innerHTML= hora.getHours()+":"+hora.getMinutes()+":"+hora.getSeconds()+"h.";
         }
         window.setInterval(function(){mostrarHora()}, 1000);
     }
