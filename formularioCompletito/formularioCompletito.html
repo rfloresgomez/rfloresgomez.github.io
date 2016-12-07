@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulario Completito</title>
+    <link rel="stylesheet" href="css/estilo.css">
     <script type="text/javascript" src="js/formularioCompletito.js"></script>
     <script type="text/javascript" src="js/validar.js"></script>
 </head>
 <body>
+
+<header>
+    <h1>Formulario Completito</h1>
+    <h2>Roberto Carlos Flores Gómez</h2>
+</header>
+
 <form action="formularioCompletito.html">
     <table>
         <tr>
@@ -66,7 +73,29 @@
             </td>
         </tr>
         <tr>
-            <td><input type="submit" value="Enviar" id="enviar"></td>
+            <td>Idiomas</td>
+            <td>
+                Inglés<input type="checkbox" id="ingles">
+                Francés<input type="checkbox" id="frances">
+                Alemán<input type="checkbox" id="aleman">
+                Polaco<input type="checkbox" id="polaco">
+            </td>
+            <td>
+                <div id="errorIdiomas"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Sexo</td>
+            <td>
+                Hombre<input type="radio" name="sexo" id="hombre">
+                Mujer<input type="radio" name="sexo" id="mujer">
+            </td>
+            <td>
+                <div id="errorSexo"></div>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Enviar" id="enviar"></td>
         </tr>
     </table>
 </form>

@@ -1,0 +1,22 @@
+header{
+    background-color: #005F6B;
+    border-radius: 7px 12px;
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+div{
+    color: red;
+    width: 250px;
+}
+
+table{
+    background-color: lightblue;
+    border-radius: 12px 7px;
+    margin: 0 auto;
+    padding: 150px;
+    padding-top: 15px;
+    width: 70%;
+}
