@@ -33,14 +33,13 @@
 
             <article>
                 <form action="index.html">
-                    <table>
-                        <tr>
-                            <td>Título</td>
-                            <td><input type="text" name="titulo" id="titulo" required></td>
-                        </tr>
-                        <tr>
-                            <td>Módulo</td>
-                            <td>
+                            <p>
+                                <label>Título</label>
+                                <input type="text" name="titulo" id="titulo" required>
+                            </p>
+
+                            <p>
+                                <label>Módulo</label>
                                 <select name="modulo" required>
                                     <option value="diw">DIW</option>
                                     <option value="dwec">DWEC</option>
@@ -48,21 +47,22 @@
                                     <option value="daw">DAW</option>
                                     <option value="hlc">HLC</option>
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Descripción</td>
-                            <td><textarea required></textarea></td>
-                        </tr>
-                        <tr>
-                            <td>Fecha de entrega </td>
-                            <td><input type="date" required></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="submit" name="Enviar"></td>
-                        </tr>
-                    </table>
+                            </p>
+
+                            <p>
+                                <label>Descripción</label>
+                                <textarea required></textarea></p>
+
+                            <p>
+                                <label>Fecha de entrega</label>
+                                <input type="date" required>
+                            </p>
+
+                            <p>
+                                <label></label>
+                                <input type="submit" value="Crear nota">
+                            </p>
+
                 </form>
             </article>
         </section>
@@ -145,9 +145,9 @@
 <footer>
     <p>Roberto Carlos Flores Gómez</p>
     <ul>
-        <li><a href="https://www.facebook.com/robertocarlos.floresgomez"><div class="redes" id="facebook"></div></a></li>
-        <li><a href="https://twitter.com/batato1994"><div class="redes" id="twitter"></div></a></li>
-        <li><a href="https://github.com/rfloresgomez/rfloresgomez.github.io/tree/master/gestorDeTareas"><div class="redes" id="github"></div></a></li>
+        <li><a href="https://www.facebook.com/robertocarlos.floresgomez" target="_blank"><img class="redes" src="img/facebook.svg" alt="Facebook"></a></li>
+        <li><a href="https://twitter.com/batato1994" target="_blank"><img class="redes" src="img/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="https://github.com/rfloresgomez/rfloresgomez.github.io/tree/master/gestorDeTareas" target="_blank"><img class="redes" src="img/github.svg" alt="Github"></a></li>
     </ul>
 </footer>
 </body>
