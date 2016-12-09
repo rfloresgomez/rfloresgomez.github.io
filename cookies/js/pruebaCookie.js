@@ -14,8 +14,12 @@
 {
     let usuario;
     let pass;
+    let cajas;
+
     let errorUsuario;
     let errorPass;
+    let mensajes;
+
     let enviar;
     let limpiar;
 
@@ -41,22 +45,10 @@
         return "";
     }
 
-
-    let validarUsuario = function () {
-        let patron = /^[\w\d-_]{5,}$/;
-        if (!patron.test(usuario.value))
-            errorUsuario.innerHTML = "Usuario no válido.";
-        else
-            errorUsuario.innerHTML = "";
-    }
-
-    let validarPass = function () {
-        let patron = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
-        ;
-        if (!patron.test(pass.value))
-            errorPass.innerHTML = "Contraseña no válida.";
-        else
-            errorPass.innerHTML = "";
+    let comprobarError = function (error) {
+        let validar = new Validar(this);
+            let mensaje = (validar.comprobarSiVacio() || validar.comprobarRegex());
+            error.innerHTML = mensaje;
     }
 
     let abrirNuevaVentana = function () {
@@ -66,24 +58,33 @@
     }
 
     let comprobarErrores = function () {
-        validarUsuario();
-        validarPass();
-        if (errorUsuario.textContent != "")
-            usuario.focus();
-        else if (errorPass.textContent != "")
-            pass.focus();
-        else {
+        let errores = [];
+        for (let i = 0; i < cajas.length; i++) {
+            comprobarError.bind(cajas[i], mensajes[i])();
+            if (mensajes[i].textContent != "") {
+                errores.push(cajas[i]);
+            }
+        }
+        if (errores.length > 0)
+            errores[0].focus();
+        else if (errores.length == 0) {
             setCookie("usuario", usuario.value, 1);
             setCookie("pass", pass.value, 1);
             abrirNuevaVentana();
         }
     }
 
+    let limpiarCajas = function () {
+        for(let i=0; i<cajas.length; i++) {
+            cajas[i].value = "";
+            mensajes[i].innerHTML = "";
+        }
+    }
+
     let limpiarCookie = function () {
         setCookie("usuario", "", -1);
         setCookie("pass", "", -1);
-        usuario.value = "";
-        pass.value = "";
+        limpiarCajas();
     }
 
     let comprobarCookie = function () {
@@ -94,13 +95,17 @@
     let init = function () {
         usuario = document.getElementById("usuario");
         pass = document.getElementById("pass");
+        cajas = [usuario, pass];
+
         errorPass = document.getElementById("errorPass");
         errorUsuario = document.getElementById("errorUsuario");
+        mensajes = [errorUsuario, errorPass];
+
         enviar = document.getElementById("enviar");
         limpiar = document.getElementById("limpiar");
 
-        usuario.addEventListener("focusout", validarUsuario);
-        pass.addEventListener("focusout", validarPass);
+        usuario.addEventListener("focusout", comprobarError.bind(usuario, errorUsuario));
+        pass.addEventListener("focusout", comprobarError.bind(pass, errorPass));
         enviar.addEventListener("click", comprobarErrores);
         limpiar.addEventListener("click", limpiarCookie);
 

@@ -11,7 +11,9 @@ let Expresiones = function () {
         'fecha': /^\d{2}[/\s-]\d{2}[/\s-]\d{4}$/,
         'telefono': /^\d{9}$/,
         'cuenta': /^\d{4}(-)?\d{4}(\1)\d{2}(\1)\d{10}$/,
-        'url': /^(http:\/\/|https:\/\/)?(www.)?[\w\d]*(.com|.es|.org|.edu){1}$/
+        'url': /^(http:\/\/|https:\/\/)?(www.)?[\w\d]*(.com|.es|.org|.edu){1}$/,
+        'usuario':  /^[\w\d-_]{5,}$/,
+        'pass': /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{6,}$/
     };
     Expresiones.prototype.errores = {
         'nombre': 'Debe empezar por mayúscula y un mínimo de 3 letras.',
@@ -21,7 +23,9 @@ let Expresiones = function () {
         'fecha': 'La fecha tiene cumplir el patrón: xx/xx/xxxx separado por barras, guiones o espacios.',
         'telefono': 'El teléfono debe contener 9 dígitos.',
         'cuenta': 'La cuenta tiene que cumplir el patrón: xxxx-xxxx-xx-xxxxxxxxxx separado o no por guiones.',
-        'url': 'La url tiene que tener que cumplir el patrón: http://www.ejemplo.es.'
+        'url': 'La url tiene que tener que cumplir el patrón: http://www.ejemplo.es.',
+        'usuario': 'El usuario debe tener al menos 5 caracteres.',
+        'pass': 'La contraseña debe ser mayor de 5, tener mayúscula, minúscula, número y carácter especial.'
     };
 
     Expresiones.prototype.getExpresionError = function (indice) {
@@ -49,16 +53,6 @@ class Validar {
     comprobarSiVacio() {
         if (this.obj.value.length == 0)
             return this.obj.id + " no puede estar vacío."
-        else
-            return "";
-    }
-
-    comprobarLetraDni() {
-        let letrasDni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-        let numeroDni = this.obj.value.substr(0, 8);
-        let letra = this.obj.value.substr(this.obj.value.length - 1, 1);
-        if (letra.toUpperCase() != letrasDni[numeroDni % 23])
-            return this.obj.id + " no coincide la letra.";
         else
             return "";
     }

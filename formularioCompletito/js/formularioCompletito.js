@@ -34,7 +34,7 @@
 
     let enviar;
 
-    let comprobarLetraDni = function () {
+    /*let comprobarLetraDni = function () {
         let letrasDni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
         let numeroDni = dni.value.substr(0, 8);
         let letra = dni.value.substr(dni.value.length - 1, 1);
@@ -42,7 +42,7 @@
             return dni.id + " no coincide la letra.";
         else
             return "";
-    }
+    }*/
 
     let comprobarCheck = function (array) {
         let vacio = true;
@@ -69,7 +69,7 @@
             let validar = new Validar(this);
             let mensaje = (validar.comprobarSiVacio() || validar.comprobarRegex());
             if (this == dni)
-                mensaje = (mensaje || comprobarLetraDni())
+                mensaje = (mensaje || validar.comprobarLetraDni())
             error.innerHTML = mensaje;
         }
     }
@@ -126,20 +126,23 @@
         errorUrl = document.getElementById("errorUrl");
         errorIdiomas = document.getElementById("errorIdiomas");
         errorSexo = document.getElementById("errorSexo");
-        mensajes = [errorNombre, errorApellidos, errorEmail, errorDni, errorFecha, errorTelefono, errorCuenta, errorUrl, errorIdiomas, errorSexo];
+        mensajes = [errorNombre, errorApellidos, errorDni, errorEmail, errorFecha, errorTelefono, errorCuenta, errorUrl, errorIdiomas, errorSexo];
 
         enviar = document.getElementById("enviar");
 
 
-        nombre.addEventListener("focusout", comprobarError.bind(nombre, errorNombre));
+        /*nombre.addEventListener("focusout", comprobarError.bind(nombre, errorNombre));
         apellidos.addEventListener("focusout", comprobarError.bind(apellidos, errorApellidos));
         email.addEventListener("focusout", comprobarError.bind(email, errorEmail));
         dni.addEventListener("focusout", comprobarError.bind(dni, errorDni));
         fecha.addEventListener("focusout", comprobarError.bind(fecha, errorFecha));
         telefono.addEventListener("focusout", comprobarError.bind(telefono, errorTelefono));
         cuenta.addEventListener("focusout", comprobarError.bind(cuenta, errorCuenta));
-        url.addEventListener("focusout", comprobarError.bind(url, errorUrl));
+        url.addEventListener("focusout", comprobarError.bind(url, errorUrl));*/
         enviar.addEventListener("click", comprobarErrores);
+
+        for (let i = 0; i < cajas.length; i++)
+            cajas[i].addEventListener("focusout", comprobarError.bind(cajas[i], mensajes[i]));
     }
 
     window.onload = init;
