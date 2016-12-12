@@ -1,11 +1,11 @@
 body {
     font-family: 'Yrsa', serif;
     font-size: 18px;
-    background-color: #424242;
+    background-color: rgba(66, 66, 66, 0.90);
 }
 
 #header {
-    background-color: #FF9900;
+    background-color: rgba(255, 153, 0, 0.90);
     text-align: center;
     padding: 1px;
     border-radius: 20px 20px 0px 0px;
@@ -113,7 +113,7 @@ h4 {
 }
 
 footer{
-    background-color: #FF9900;
+    background-color: rgba(255, 153, 0, 0.90);
     text-align: center;
     padding: 1px;
     border-radius: 0px 0px 20px 20px;
