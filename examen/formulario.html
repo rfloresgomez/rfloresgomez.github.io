@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Roberto Carlos Flores Gómez</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="js/formulario.js"></script>
+    <script type="text/javascript" src="js/validar.js"></script>
+    <script type="text/javascript" src="js/empleado.js"></script>
+</head>
+<body>
+<h1>Roberto Carlos Flores Gómez</h1>
+<h2>Formulario</h2>
+<noscript>Tu navegador no soporta JavaScript</noscript>
+<form>
+    <table>
+        <tr>
+            <td><p>Nombre: </p></td>
+            <td><input type="text" id="nombre"></td>
+            <td><div class="error" id="errorNombre"></div></td>
+        </tr>
+        <tr>
+            <td><p>Fecha de nacimiento: </p></td>
+            <td><input type="text" id="fecha"></td>
+            <td><div class="error" id="errorFecha"></div></td>
+        </tr>
+        <tr>
+            <td><p>DNI: </p></td>
+            <td><input type="text" id="dni"></td>
+            <td><div class="error" id="errorDni"></div></td>
+        </tr>
+        <tr>
+            <td><p>¿Aceptas las condiciones de uso?: </p></td>
+            <td><input type="checkbox" id="check"></td>
+            <td><div class="error" id="errorCheck"></div></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="boton" value="Enviar"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
