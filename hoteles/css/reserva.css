@@ -15,6 +15,10 @@ body {
     padding: 3px;
 }
 
+#galeria{
+    text-align: center;
+}
+
 aside{
     padding: 3px;
     background-color: rgba(154, 205, 50, 0.71);
@@ -57,7 +61,7 @@ a:hover {
 }
 
 main {
-    display: none;
+
 }
 
 section {
