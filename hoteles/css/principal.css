@@ -1,0 +1,128 @@
+body {
+    background-color: palegreen;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#header {
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 7px;
+}
+
+#header li {
+    list-style: none;
+    padding: 3px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+article>p{
+    text-align: center;
+}
+
+a:hover {
+    text-shadow: black 0px 2px;
+    transition: all 1s;
+}
+
+aside {
+    display: none;
+}
+
+section {
+    margin: 7px;
+    padding: 7px;
+    background-color: yellowgreen;
+    border-radius: 2px 7px;
+}
+
+footer {
+    text-align: center;
+    background-color: forestgreen;
+    padding: 3px;
+}
+
+button{
+    background-color: darkgreen;
+    border-color: black;
+    color: white;
+}
+
+button:hover{
+    box-shadow: black 1px 1px 3px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1075px) {
+    body {
+        background: url("../images/inicio-grande.jpg") center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #header li {
+        display: inline-block;
+    }
+
+    main {
+        width: 70%;
+        display: inline-block;
+        margin: 13px;
+    }
+
+    section {
+        background-color: rgba(154, 205, 50, 0.85);
+    }
+
+    aside {
+        width: 20%;
+        background-color: rgba(154, 205, 50, 0.85);
+        border-radius: 2px 7px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 1080px) {
+    body {
+        background: url("../images/inicio-grande.jpg") center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #header li {
+        display: inline-block;
+    }
+
+    main {
+        width: 70%;
+        display: inline-block;
+        margin: 13px;
+    }
+
+    section {
+        background-color: rgba(154, 205, 50, 0.85);
+        width: 430px;
+        display: inline-block;
+    }
+
+    aside {
+        width: 20%;
+        background-color: rgba(154, 205, 50, 0.85);
+        border-radius: 2px 7px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}

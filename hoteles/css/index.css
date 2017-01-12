@@ -1,0 +1,85 @@
+body{
+    background: url("../images/inicio-pequenio.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#entrar{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+#sol{
+    background: url("../images/sol-pequenio.png");
+    background-size: 100% 100%;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    animation: agrandar 2s infinite;
+}
+
+@keyframes agrandar {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1075px) {
+    body{
+        background: url("../images/fondo.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    #entrar{
+        font-size: 50px;
+        width: 150px;
+        margin-left: -75px;
+        margin-top: -75px;
+    }
+
+    #sol{
+        background: url("../images/sol-mediano.png");
+        margin: 15px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-device-width: 1080px){
+    body{
+        background: url("../images/fondo.jpg");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    #entrar{
+        font-size: 50px;
+        width: 150px;
+        margin-left: -75px;
+        margin-top: -75px;
+    }
+
+    #sol{
+        background: url("../images/sol-grande.png");
+        margin: 30px;
+        width: 200px;
+        height: 200px;
+    }
+}
