@@ -83,6 +83,10 @@ button{
     color: white;
 }
 
+.texto p{
+    text-align: justify;
+}
+
 button:hover{
     box-shadow: black 1px 1px 3px;
 }

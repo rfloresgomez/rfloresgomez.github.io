@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reserva.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/galeria.css">
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jMyCarousel.min.js"></script>
+    <script type="text/javascript" src="js/galeria.js"></script>
 </head>
 <body>
 <div id="header">
@@ -25,52 +29,76 @@
     <main>
         <section>
             <h2>Camino de Santo Domingo</h2>
-            <div id="galeria">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="images/casa1.jpg">
-                    <img src="images/casa1-pequenia.jpg" alt="Casa1">
-                </picture>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="images/casa2.jpg">
-                    <img src="images/casa2-pequenia.jpg" alt="Casa2">
-                </picture>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="images/casa3.jpg">
-                    <img src="images/casa3-pequenia.jpg" alt="Casa3">
-                </picture>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="images/casa4.jpg">
-                    <img src="images/casa4-pequenia.jpg" alt="Casa4">
-                </picture>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="images/casa5.jpg">
-                    <img src="images/casa5-pequenia.jpg" alt="Casa5">
-                </picture>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="images/casa6.jpg">
-                    <img src="images/casa6-pequenia.jpg" alt="Casa6">
-                </picture>
-            </div>
+            <div id="contenido_galeria">
+                <div id="imagen1">
+                    <img src="images/casa1.jpg" alt=""/>
 
-            <div id="texto">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed vehicula neque, tristique
-                    dignissim metus. Etiam ac ex et lectus finibus ullamcorper. Aenean vitae vulputate magna, vel
-                    commodo tellus. Nulla ac nisl vel ligula pharetra volutpat. Donec eget nunc enim. Duis bibendum eu
-                    nisl sit amet tincidunt. Suspendisse euismod eros quis lectus cursus, sed euismod augue interdum.
-                    Mauris vestibulum risus elit, nec malesuada risus congue quis. Sed velit dolor, varius quis quam
-                    quis, volutpat ultricies metus. Maecenas fermentum, nisi non vestibulum laoreet, ligula nisi
-                    facilisis quam, eget accumsan risus diam in urna. Aliquam facilisis pharetra nulla. Proin consequat
-                    scelerisque nisl, aliquet commodo erat posuere ac.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis varius elementum. In euismod
+                        tempor mi eu euismod. Donec libero tortor,
+                        tincidunt id egestas at, ultricies non nisl. Donec enim lorem, commodo sed dapibus quis, molestie vitae
+                        urna. Mauris semper dignissim nibh. Proin rhoncus,
+                        urna non posuere sagittis, risus eros iaculis tellus, a hendrerit sem felis nec urna. Integer purus mauris,
+                        pharetra quis commodo non, varius quis ante.</p>
+                </div>
+                <div id="imagen2">
+                    <img src="images/casa2.jpg" alt=""/>
 
-                    <p>Donec dui magna, ullamcorper vitae ante eget, pharetra sagittis odio. Morbi dignissim, felis quis
-                    iaculis pretium, massa velit varius nulla, ut feugiat elit tortor a dui. Morbi aliquam augue non
-                    consectetur venenatis. Proin vitae vulputate felis, in tempor ex. Sed eu volutpat sem. Aenean ligula
-                    est, posuere et consectetur at, porttitor vel urna. Aenean dignissim at libero nec hendrerit.
-                    Integer vel molestie sapien. Suspendisse iaculis luctus quam sit amet interdum. Lorem ipsum dolor
-                    sit amet, consectetur adipiscing elit.</p>
-                <h3>300€/noche</h3>
-                <h4>Nº Habitaciones: 4</h4>
-            </div>
+                    <p>Nullam et dolor ut neque eleifend elementum in quis lacus. Donec lorem libero, posuere feugiat ornare vitae,
+                        adipiscing in nunc. Sed gravida, purus vel malesuada
+                        luctus, nisi nisi lobortis nisl, nec auctor odio diam non nibh. Maecenas mattis mi sed arcu consequat id
+                        pretium tortor facilisis. Praesent nec vestibulum massa.
+                        Proin at pulvinar orci. Nulla facilisi. Duis rhoncus diam ut orci ultricies auctor dignissim massa
+                        rutrum. </p>
+                </div>
+                <div id="imagen3">
+                    <img src="images/casa3.jpg" alt=""/>
+
+                    <p>Nulla facilisi. Phasellus blandit dictum neque. Etiam id fringilla nisl. Fusce pharetra commodo felis ac
+                        viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse nisi lorem, feugiat at adipiscing eu, ullamcorper eget orci. Curabitur scelerisque diam et risus
+                        vestibulum convallis. Integer vestibulum ultricies purus
+                        sed semper. Ut lobortis dui non nunc facilisis venenatis.</p>
+                </div>
+                <div id="imagen4">
+                    <img src="images/casa4.jpg" alt=""/>
+
+                    <p>Fusce porta pretium tincidunt. Curabitur sapien purus, malesuada sit amet sagittis ut, feugiat volutpat
+                        magna. Duis vitae enim ligula. In orci ligula, mollis quis facilisis
+                        in, rhoncus sodales ipsum. Mauris vel sem mauris, at sollicitudin magna. Fusce mi sem, porttitor ut rutrum
+                        vitae, sollicitudin in nibh. Integer quis leo libero.
+                        Quisque ligula lorem, mollis et viverra at, consequat et turpis.</p>
+                </div>
+                <div id="imagen5">
+                    <img src="images/casa5.jpg" alt=""/>
+
+                    <p>Aenean semper auctor sem fringilla volutpat. Maecenas ultricies tortor quis sapien vulputate scelerisque.
+                        Integer consequat purus at libero posuere vel vestibulum est tristique.
+                        Donec augue arcu, hendrerit sed dignissim ut, eleifend et neque. Sed placerat, augue quis vulputate
+                        accumsan, libero nibh posuere quam, a volutpat ante odio et ipsum.
+                        Nulla malesuada tellus ac justo mattis ultrices. </p>
+                </div>
+                <div id="imagen6">
+                    <img src="images/casa6.jpg" alt=""/>
+
+                    <p>Suspendisse potenti. Nam elementum augue id augue lobortis et ultrices nisi vestibulum. In dapibus, nibh a
+                        vehicula rutrum, risus enim tincidunt erat, eu facilisis felis
+                        ante cursus arcu. Aenean ut varius libero. Sed metus tellus, tempus eu cursus quis, consectetur vitae lorem.
+                        Nullam sodales nulla a erat tempus condimentum.
+                        Aenean vulputate neque eget arcu consequat interdum. Aliquam ut nisi dui, sit amet tincidunt sem. Etiam
+                        volutpat dignissim gravida.</p>
+                </div>
+            </div><!-- fin div contenido-galeria -->
+
+            <div class="jMyCarousel">
+                <ul>
+                    <li><a href="#imagen1"><img src="images/casa1.jpg" alt="" width="160" height="133"/></a></li>
+                    <li><a href="#imagen2"><img src="images/casa2.jpg" alt="" width="160" height="133"/></a></li>
+                    <li><a href="#imagen3"><img src="images/casa3.jpg" alt="" width="160" height="133"/></a></li>
+                    <li><a href="#imagen4"><img src="images/casa4.jpg" alt="" width="160" height="133"/></a></li>
+                    <li><a href="#imagen5"><img src="images/casa5.jpg" alt="" width="160" height="133"/></a></li>
+                    <li><a href="#imagen6"><img src="images/casa6.jpg" alt="" width="160" height="133"/></a></li>
+                </ul>
+            </div><!-- Fin div jMyCarousel -->
         </section>
     </main>
     <aside>

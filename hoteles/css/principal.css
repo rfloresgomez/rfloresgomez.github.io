@@ -28,6 +28,9 @@ a {
 article>p{
     text-align: center;
 }
+article h3,h4{
+    text-align: left;
+}
 
 a:hover {
     text-shadow: black 0px 2px;
@@ -43,6 +46,7 @@ section {
     padding: 7px;
     background-color: yellowgreen;
     border-radius: 2px 7px;
+    text-align: center;
 }
 
 footer {
@@ -93,6 +97,7 @@ input{
 
     section {
         background-color: rgba(154, 205, 50, 0.85);
+        width: 300px;
     }
 
     aside {

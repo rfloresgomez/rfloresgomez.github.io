@@ -1,0 +1,78 @@
+.demo h1 {
+    margin-bottom: 25px;
+}
+
+.demo .contenedor .contenido {
+    margin-right: 150px;
+}
+
+a.boton_demo {
+    margin-top: 20px
+}
+
+div.jMyCarousel {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+div.jMyCarousel .prev {
+    background: url('../images/left.png') center center no-repeat;
+    width: 47px;
+    height: 61px;
+    border: 0px;
+}
+
+div.jMyCarousel .next {
+    background: url('../images/right.png') center center no-repeat;
+    width: 40px;
+    height: 61px;
+    border: 0px;
+}
+
+div.jMyCarousel ul li {
+    margin: 0px;
+    line-height: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+div.jMyCarousel ul li a {
+    display: inline-block;
+}
+
+div.jMyCarousel ul li img {
+    display: inline-block;
+    border: 0px;
+    margin: 0px 5px 0px;
+}
+
+section>div{
+    display: block;
+}
+
+#contenido_galeria {
+    margin-left: 75px;
+    position: relative;
+    height: 350px;
+}
+
+#contenido_galeria>div>*{
+    display: inline-block;
+}
+
+#contenido_galeria img {
+    width: 60%;
+}
+
+#contenido_galeria p {
+    vertical-align: top;
+    width: 35%;
+    text-align: justify;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1075px) {
+    div.jMyCarousel {
+        margin-top: 0px;
+    }
+}
