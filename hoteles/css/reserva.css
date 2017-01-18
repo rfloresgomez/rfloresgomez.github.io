@@ -1,6 +1,11 @@
 body {
     background-color: palegreen;
     font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
+
+#principal{
+    text-align: center;
 }
 
 #header {
