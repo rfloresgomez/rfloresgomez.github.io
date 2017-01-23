@@ -4,10 +4,6 @@ body {
     text-align: center;
 }
 
-#principal{
-    text-align: center;
-}
-
 #header {
     text-align: center;
     background-color: forestgreen;
@@ -63,10 +59,6 @@ article>p{
 a:hover {
     text-shadow: black 0px 2px;
     transition: all 1s;
-}
-
-main {
-
 }
 
 section {

@@ -19,15 +19,6 @@ a{
     display: none;
 }
 
-#sol{
-    background: url("../images/sol-pequenio.png");
-    background-size: 100% 100%;
-    margin: 5px;
-    width: 50px;
-    height: 50px;
-    animation: agrandar 2s infinite;
-}
-
 @keyframes agrandar {
     0% {
         transform: scale(1, 1);
@@ -54,11 +45,11 @@ a{
         margin-top: -75px;
     }
 
-    #sol{
-        background: url("../images/sol-mediano.png");
+    #nubes{
+        background: url("../images/nube1.png");
         margin: 15px;
-        width: 100px;
-        height: 100px;
+        width: 650px;
+        height: 250px;
     }
 }
 
@@ -76,10 +67,11 @@ a{
         margin-top: -75px;
     }
 
-    #sol{
-        background: url("../images/sol-grande.png");
+    #nubes{
+        background-attachment: fixed;
+        background: url("../images/nube1.png");
         margin: 30px;
-        width: 200px;
-        height: 200px;
+        width: 650px;
+        height: 250px;
     }
 }

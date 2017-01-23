@@ -1,6 +1,15 @@
+#principal{
+    text-align: center;
+}
+
 #imagenes li{
     display: inline-block;
     opacity: 0.5;
+}
+
+#principalGaleria *{
+    display: inline-block;
+    vertical-align: top;
 }
 
 #principalGaleria img{
@@ -14,6 +23,10 @@
 }
 
 @media only screen and (min-width: 1080px) {
+    #principal{
+        text-align: left;
+    }
+
     #principalGaleria img{
         width: 498px;
         height: 399px;
