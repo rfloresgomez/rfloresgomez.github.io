@@ -7,7 +7,7 @@
     opacity: 0.5;
 }
 
-#principalGaleria *{
+#principalGaleria>*{
     display: inline-block;
     vertical-align: top;
 }
@@ -22,9 +22,23 @@
     height: 88px;
 }
 
+#texto{
+    text-align: justify;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1075px) {
+    #texto{
+        width: 45%;
+    }
+}
+
 @media only screen and (min-width: 1080px) {
     #principal{
         text-align: left;
+    }
+
+    #texto{
+        width: 45%;
     }
 
     #principalGaleria img{

@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-56.428571"
+     inkscape:cx="-487.85714"
      inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="Navicon"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,21 +56,21 @@
        transform="matrix(24.52381,0,0,26.714285,-8087.8571,-6014.495)"
        id="Navicon">
       <rect
-         style="fill:#008000"
+         style="fill:#ffffff;fill-opacity:1"
          x="330"
          y="232"
          width="30"
          height="4"
          id="rect38" />
       <rect
-         style="fill:#008000"
+         style="fill:#ffffff;fill-opacity:1"
          x="330"
          y="242"
          width="30"
          height="4"
          id="rect40" />
       <rect
-         style="fill:#008000"
+         style="fill:#ffffff;fill-opacity:1"
          x="330"
          y="252"
          width="30"
