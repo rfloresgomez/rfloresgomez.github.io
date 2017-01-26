@@ -14,7 +14,7 @@ Empleado.prototype.crearNuevaVentana = function () {
     let diasRestantes = fechaFinAnio - fechaActual;
     diasRestantes = Math.floor((diasRestantes / 1000) / 60 / 60 / 24);
     let nuevaVentana = window.open("", "NuevoEmpleado");
-    nuevaVentana.document.write("<h1>Miguel Ángel Zamora Blanco</h1>" +
+    nuevaVentana.document.write("<h1>Roberto Carlos Flores Gómez</h1>" +
         "<p>Nombre: " + this.nombre + "</p>" +
         "<p>Fecha Nacimiento: " + this.fecha + "</p>" +
         "<p>Dni: " + this.dni + "</p>" +

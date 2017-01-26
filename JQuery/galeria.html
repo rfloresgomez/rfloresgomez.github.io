@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#imagenes li").css({"display": "inline-block",
+                                    "opacity": "0.5"});
+
+            $("#imagenes li").mouseover(function () {
+                $(this).css("opacity", "1");
+            });
+
+            $("#imagenes li").mouseout(function () {
+                $(this).css("opacity", "0.5");
+            });
+
+            $("#imagenes img").click(function () {
+                let url = $(this).attr("src");
+                $("#principal img").fadeOut(300, function () {
+                    $("#principal img").attr("src", url);
+                    $("#principal img").fadeIn(500);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="principal">
+    <img src="images/casa1.jpg" alt="principal" width="498" height="399"/>
+</div>
+<div id="imagenes">
+    <ul>
+        <li><img src="images/casa1.jpg" alt="" width="160" height="133"/></li>
+        <li><img src="images/casa2.jpg" alt="" width="160" height="133"/></li>
+        <li><img src="images/casa3.jpg" alt="" width="160" height="133"/></li>
+        <li><img src="images/casa4.jpg" alt="" width="160" height="133"/></li>
+        <li><img src="images/casa5.jpg" alt="" width="160" height="133"/></li>
+        <li><img src="images/casa6.jpg" alt="" width="160" height="133"/></li>
+    </ul>
+</div>
+<p id="texto"></p>
+</body>
+</html>

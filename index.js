@@ -15,6 +15,26 @@ $(document).ready(function () {
         $("#divcap2").show(1000);
     });
 
+    $("#cap4").click(function (evento) {
+        capitulos.hide(500);
+        $("#divcap4").show(1000);
+    });
+    $("#cap5").click(function (evento) {
+        capitulos.hide(500);
+        $("#divcap5").show(1000);
+    });
+    $("#cap6").click(function (evento) {
+        capitulos.hide(500);
+        $("#divcap6").show(1000);
+    });
+    $("#cap7").click(function (evento) {
+        capitulos.hide(500);
+        $("#divcap7").show(1000);
+    });
+    $("#cap8").click(function (evento) {
+        capitulos.hide(500);
+        $("#divcap8").show(1000);
+    });
     $("#cap3").click(function (evento) {
         capitulos.hide(500);
         $("#divcap3").show(1000);

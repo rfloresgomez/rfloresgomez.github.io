@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Roberto Carlos Flores Gómez</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="../jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/empleado.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script type="text/javascript" src="js/formularioJQuery.js"></script>
+</head>
+<body>
+<h1>Roberto Carlos Flores Gómez</h1>
+<h2>Formulario</h2>
+<noscript>Tu navegador no soporta JavaScript</noscript>
+<form id="formulario">
+    <table>
+        <tr>
+            <td><p>Nombre: </p></td>
+            <td><input type="text" id="nombre" data-validation="length" data-validation-length="min4" data-validation-error-msg="Formato no válido."></td>
+            <td><div class="error" id="errorNombre"></div></td>
+        </tr>
+        <tr>
+            <td><p>Fecha de nacimiento: </p></td>
+            <td><input type="text" id="fecha" data-validation="date" data-validation-format="dd/mm/yyyy" data-validation-error-msg="Formato no válido."></td>
+            <td><div class="error" id="errorFecha"></div></td>
+        </tr>
+        <tr>
+            <td><p>DNI: </p></td>
+            <td><input type="text" id="dni" data-validation="letraDNI" data-validation-error-msg="Formato no válido."></td>
+            <td><div class="error" id="errorDni"></div></td>
+        </tr>
+        <tr>
+            <td><p>¿Aceptas las condiciones de uso?: </p></td>
+            <td><input type="checkbox" id="check" data-validation="required" data-validation-error-msg="Check requerido."></td>
+            <td><div class="error" id="errorCheck"></div></td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="boton" value="Enviar"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
