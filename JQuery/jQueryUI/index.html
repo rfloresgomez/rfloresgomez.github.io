@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <meta charset="utf-8">
+    <title>Roberto Carlos Flores Gómez</title>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>Roberto Carlos Flores Gómez</h1>
+
+<div class="ui-widget">
+    <p>Página donde mostraré tres ejemplos de lo que podemos hacer con jQueryUI.</p>
+</div>
+
+
+<!-- Autocomplete -->
+<h2 class="demoHeaders">Autocomplete</h2>
+<h3 class="demoHeaders">Prueba a escribir el nombre de los alumnos de 2º de DAW</h3>
+
+<div>
+    <input id="autocomplete" title="type &quot;a&quot;">
+</div>
+
+
+<!-- Menu -->
+<h2 class="demoHeaders">Menu Sysmana 2017</h2>
+<ul style="width:100px;" id="menu">
+    <li>
+        <div>Lunes</div>
+        <ul>
+            <li>
+                <div>Diseño Web básico</div>
+            </li>
+            <li>
+                <div>MaterializeCSS</div>
+            </li>
+            <li>
+                <div>Raspberry Pi</div>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div>Martes</div>
+        <ul>
+            <li>
+                <div>Gestión ágil de proyectos</div>
+            </li>
+            <li>
+                <div>EmberJS</div>
+            </li>
+            <li>
+                <div>Three.js</div>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div>Miérvoles</div>
+        <ul>
+            <li>
+                <div>Ingeniería Social</div>
+            </li>
+            <li>
+                <div>IKNX</div>
+            </li>
+            <li>
+                <div>Fermax</div>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div>Jueves</div>
+        <ul>
+            <li>
+                <div>Por qué formarte en segururidad informática</div>
+            </li>
+            <li>
+                <div>Fugas de información en la Red</div>
+            </li>
+            <li>
+                <div>MSOC</div>
+            </li>
+            <li>
+                <div>Seguridad IOT</div>
+            </li>
+            <li>
+                <div>Mesa Redonda</div>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <div>Viernes</div>
+        <ul>
+            <li>
+                <div>Mobile MKT</div>
+            </li>
+            <li>
+                <div>Modificación plantillas en WordPress</div>
+            </li>
+            <li>
+                <div>SEO</div>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+
+<!-- Highlight / Error -->
+<h2 class="demoHeaders">Highlight / Error</h2>
+
+<div class="ui-widget">
+    <div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+        <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+            <strong>Hey!</strong> Sample ui-state-highlight style.</p>
+    </div>
+</div>
+<br>
+
+<div class="ui-widget">
+    <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+        <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+            <strong>Alert:</strong> Sample ui-state-error style.</p>
+    </div>
+</div>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+
+    var availableTags = [
+        "José Manuel",
+        "Miguel Ángel López",
+        "Lucas",
+        "Estela",
+        "Antonio",
+        "Miguel Ángel Zamora",
+        "Roberto Carlos",
+        "Juan Antonio",
+        "Óscar",
+        "Alejandro",
+        "Javier"
+    ];
+    $("#autocomplete").autocomplete({
+        source: availableTags
+    });
+
+
+    $("#menu").menu();
+
+
+    // Hover states on the static widgets
+    $("#dialog-link, #icons li").hover(
+            function () {
+                $(this).addClass("ui-state-hover");
+            },
+            function () {
+                $(this).removeClass("ui-state-hover");
+            }
+    );
+</script>
+</body>
+</html>

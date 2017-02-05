@@ -23,28 +23,35 @@ let diaDeHoy = function () {
 
 
 $(document).ready(function () {
-    let h1 = $("<h1>ROBERTO CARLOS FLORES GÓMEZ</h1>");
-    let informa = $("<input type='button' id='informa' value='Informa'>");
-    let raton = $("<input type='button' id='raton' value='Ratón'>");
-    let salir = $("<input type='button' id='salir' value='Salir'>");
-    $(document.body).append(h1).append(informa).append(raton).append(salir);
+    let $h1 = $("<h1>ROBERTO CARLOS FLORES GÓMEZ</h1>");
+    let $informa = $("<input type='button' id='informa' value='Informa'>");
+    let $raton = $("<input type='button' id='raton' value='Ratón'>");
+    let $salir = $("<input type='button' id='salir' value='Salir'>");
+    let $fecha = $("<p id='fecha'></p>");
+    let $hora = $("<p id='hora'></p>");
+    $(document.body)
+        .append($h1)
+        .append($informa)
+        .append($raton)
+        .append($salir)
+        .append($fecha)
+        .append($hora);
 
     $("#informa").on("click", function (e) {
-        e.preventDefault();
-        let fecha = $("<p>"+diaDeHoy()+"</p>");
-        let hora = $("<p>"+obtenerHora()+"</p>");
-        $(document.body).append(fecha).append(hora);
+        //e.preventDefault();
+        $fecha.html(diaDeHoy);
+        $hora.html(obtenerHora);
     });
 
     $("#raton").on("click", function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         let texto = $("<p id='textoRaton'>x: "+e.clientX+" y: "+e.clientY+"</p>");
         $(document.body).append(texto);
         texto.delay(3000).fadeOut();
     });
 
     $("#salir").on("click", function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         close();
     })
 });

@@ -1,0 +1,172 @@
+body {
+    background-color: palegreen;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#header {
+    text-align: center;
+    background-color: forestgreen;
+    color: white;
+    padding: 7px;
+}
+
+#header li {
+    list-style: none;
+    padding: 3px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+article>p{
+    text-align: center;
+}
+article h3,h4{
+    text-align: left;
+}
+
+a:hover {
+    text-shadow: black 0px 2px;
+    transition: all 1s;
+}
+
+
+section {
+    margin: 7px;
+    padding: 7px;
+    background-color: yellowgreen;
+    border-radius: 2px 7px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: forestgreen;
+    padding: 3px;
+}
+
+button{
+    background-color: darkgreen;
+    border: outset black;
+    color: white;
+}
+
+button:hover{
+    box-shadow: black 1px 1px 3px;
+}
+
+input{
+    width: 70%;
+}
+
+@media only screen and (max-width: 767px) {
+    aside {
+        width: 40%;
+        background-color: rgba(154, 205, 50, 0.85);
+        border-radius: 2px 7px;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        padding: 10px;
+        display: none;
+    }
+
+    #mas {
+        width: 40px;
+        height: 40px;
+        position: fixed !important;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media only screen and (orientation: landscape){
+    section{
+        display: inline-block;
+        width: 45%;
+        min-width: 250px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1075px) {
+    #mas{
+        display: none;
+    }
+
+    body {
+        background: url("../images/inicio-grande.jpg") center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #header li {
+        display: inline-block;
+    }
+
+    main {
+        width: 70%;
+        display: inline-block;
+        margin: 13px;
+    }
+
+    section {
+        background-color: rgba(154, 205, 50, 0.85);
+        width: 300px;
+    }
+
+    aside {
+        width: 20%;
+        background-color: rgba(154, 205, 50, 0.85);
+        border-radius: 2px 7px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    #mas{
+        display: none;
+    }
+
+    body {
+        background: url("../images/inicio-grande.jpg") center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #header li {
+        display: inline-block;
+    }
+
+    main {
+        width: 70%;
+        display: inline-block;
+        margin: 13px;
+    }
+
+    section {
+        background-color: rgba(154, 205, 50, 0.85);
+        width: 400px;
+        display: inline-block;
+    }
+
+    aside {
+        width: 20%;
+        background-color: rgba(154, 205, 50, 0.85);
+        border-radius: 2px 7px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}

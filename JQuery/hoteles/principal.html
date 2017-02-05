@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>Página principal</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+    <script type="text/javascript" src="js/rango.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
+</head>
+<body>
+<div id="header">
+    <img id="mas" src="images/mas.svg" alt="mas">
+    <header>
+        <h1>Hoteles Rurales</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="principal.html">Inicio</a></li>
+            <li><a href="#">Reservas</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="principal">
+    <main>
+        <section>
+            <article>
+                <h2>Hotel 1</h2>
+
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/hotel1-300.jpg">
+                    <source media="(min-width: 1080px)" srcset="images/hotel1-700.jpg">
+                    <img src="images/hotel1-300.jpg" alt="Foto de ejemplo">
+                </picture>
+                <h3>300€/noche</h3>
+                <h4>Camino de Santo Domingo</h4>
+                <h4>Nº Habitaciones: 4</h4>
+                <p><a href="reserva.html"><button >Reservar</button></a></p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Hotel 2</h2>
+
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/hotel2-300.jpg">
+                    <source media="(min-width: 1080px)" srcset="images/hotel2-700.jpg">
+                    <img src="images/hotel2-300.jpg" alt="Foto de ejemplo">
+                </picture>
+                <h3>250€/noche</h3>
+                <h4>Finca "La Jarilla"</h4>
+                <h4>Nº Habitaciones: 4</h4>
+                <p><a href="reserva.html"><button >Reservar</button></a></p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Hotel 3</h2>
+
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/hotel1-300.jpg">
+                    <source media="(min-width: 1080px)" srcset="images/hotel1-700.jpg">
+                    <img src="images/hotel1-300.jpg" alt="Foto de ejemplo">
+                </picture>
+                <h3>180€/noche</h3>
+                <h4>Finca "El Parador"</h4>
+                <h4>Nº Habitaciones: 4</h4>
+                <p><a href="reserva.html"><button >Reservar</button></a></p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Hotel 4</h2>
+
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/hotel2-300.jpg">
+                    <source media="(min-width: 1080px)" srcset="images/hotel2-700.jpg">
+                    <img src="images/hotel2-300.jpg" alt="Foto de ejemplo">
+                </picture>
+                <h3>300€/noche</h3>
+                <h4>Camino de Santo Domingo</h4>
+                <h4>Nº Habitaciones: 4</h4>
+                <p><a href="reserva.html"><button >Reservar</button></a></p>
+            </article>
+        </section>
+    </main>
+    <aside>
+        <div id="buscador">
+            <div>
+                <p>Destino</p>
+                <p><input type="text"></p>
+                <p><a href="#"><button >Buscar</button></a></p>
+            </div>
+            <div>
+                <p>Personas</p>
+                <p><input type="number"></p>
+            </div>
+            <div>
+                <p>Precio</p>
+                <p><input type="range" id="rango" min="100" max="500"></p>
+                <p><span id="precio">300</span>€</p>
+            </div>
+        </div>
+    </aside>
+</div>
+<footer>
+    <p>Roberto Carlos Flores Gómez.</p>
+</footer>
+</body>
+</html>
