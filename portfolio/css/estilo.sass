@@ -1,0 +1,76 @@
+$azul: rgb(30, 29, 170)
+$margin: 70px
+
+=titulo()
+  font-family: 'Oswald', sans-serif
+  font-weight: bold
+  font-size: 40px
+  //text-shadow: 2px 2px 0px darkgrey
+  background-color: $azul
+  opacity: 0.81
+  text-align: center
+
+body
+  overflow-y: hidden
+
+#botonmenu
+  width: 40px
+  height: 40px
+  position: fixed !important
+  right: 0
+  top: 0
+
+
+#menu
+  display: none
+  flex-flow: column
+  justify-content: space-around
+  align-items: center
+  position: fixed
+  top: 0
+  left: 0
+  width: 60%
+  height: 70%
+  background-color: $azul
+  a
+    color: white
+    text-decoration: none
+
+
+#principal
+  background-image: url("../image/fondo-pequenio.jpg")
+  //background-attachment: fixed
+  background-size: 100% 100%
+  color: white
+  //para poner el texto centrado en la página
+  display: flex
+  //para que las cosas se pongan unas debajo de otras
+  flex-flow: column
+  //abajo
+  align-items: center
+  //lateral
+  justify-content: center
+  //filter: blur(1px)
+  h1
+    +titulo
+    padding: 15px
+    //background-color: rgba(35, 35, 35, 0.87)
+
+
+@media screen and (min-width: 768px)
+  #principal
+    background-image: url("../image/fondo.jpg")
+    h1
+      width: 100%
+      padding: 0
+      padding-top: 30px
+      padding-bottom: 30px
+      font-size: 70px
+  #menu
+    display: flex
+    flex-flow: row
+    width: 100%
+    height: $margin
+
+  #sobremi, #trabajos, #contacto
+    padding-top: $margin
