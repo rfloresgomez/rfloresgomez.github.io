@@ -1,5 +1,5 @@
 body {
-  overflow-y: hidden; }
+  overflow-y: hidden !important; }
 
 #botonmenu {
   width: 40px;
@@ -21,7 +21,8 @@ body {
   background-color: #1e1daa; }
   #menu a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 30px; }
 
 #principal {
   background-image: url("../image/fondo-pequenio.jpg");
