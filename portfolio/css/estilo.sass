@@ -1,9 +1,13 @@
 $azul: rgb(30, 29, 170)
+$fondo-pagina: rgba(204, 204, 204, 0.91)
 $margin: 70px
+$borde-grande: 50px
+$borde-pequenio: 20px
 
 html
-  ffont-family: 'Droid Sans', sans-serif
-  background-color: rgba(204, 204, 204, 0.91)
+  font-family: 'Droid Sans', sans-serif
+  background-color: $fondo-pagina
+
 
 =titulo()
   font-family: 'Oswald', sans-serif
@@ -16,37 +20,6 @@ html
 
 body
   overflow-y: hidden !important
-
-#botonmenu
-  width: 40px
-  height: 40px
-  position: fixed !important
-  right: 0
-  top: 0
-
-
-#menu
-  display: none
-  flex-flow: column
-  justify-content: space-around
-  align-items: center
-  position: fixed
-  top: 0
-  left: 0
-  width: 60%
-  height: 70%
-  background-color: $azul
-  a
-    color: white
-    text-decoration: none
-    padding: 20px
-    font-size: 20px
-    font-weight: bold
-
-h2
-  text-align: center
-  font-size: 25px
-
 
 #principal
   background-image: url("../image/fondo-pequenio.jpg")
@@ -67,11 +40,60 @@ h2
     padding: 15px
     //background-color: rgba(35, 35, 35, 0.87)
 
+#botonmenu
+  background-color: $fondo-pagina
+  border-radius: 5px 5px
+  height: 40px
+  position: fixed !important
+  right: 0
+  top: 0
+  width: 40px
+
+
+#menu
+  display: none
+  flex-flow: column
+  justify-content: space-around
+  align-items: center
+  position: fixed
+  top: 0
+  left: 0
+  width: 60%
+  height: 70%
+  background-color: $azul
+  p
+    margin: 0
+  a
+    color: white
+    font-size: 20px
+    font-weight: bold
+    padding: 20px 0px
+    text-align: center
+    text-decoration: none
+    transition: all .5s
+    width: 100%
+    &:hover
+      background-color: rgba(0, 0, 0, 0.3)
+      transition: all .7s
+
+.ajustar
+  div
+    display: inline-block
+    vertical-align: top
+  .texto
+    text-align: justify
+    padding: 2px
+
+h2
+  text-align: center
+  font-size: 25px
+
+
 #mifoto
   background-image: url("../image/mifoto.jpg")
   background-size: 100% 100%
   border: solid 1px black
-  border-radius: 50px
+  border-radius: $borde-pequenio
   box-shadow: 1px 1px 1px white
   height: 125px
   width: 125px
@@ -92,6 +114,10 @@ h2
     flex-flow: row
     width: 100%
     height: $margin
+    a
+      border-radius: 10px
+      padding: 20px
+      width: auto
 
   #sobremi, #trabajos, #contacto
     padding-top: $margin
@@ -103,3 +129,7 @@ h2
     height: 350px
     width: 350px
     margin: 15px
+    border-radius: $borde-grande
+
+  .texto
+    width: 70%

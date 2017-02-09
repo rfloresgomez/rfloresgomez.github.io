@@ -1,38 +1,9 @@
 html {
-  ffont-family: "Droid Sans", sans-serif;
+  font-family: "Droid Sans", sans-serif;
   background-color: rgba(204, 204, 204, 0.91); }
 
 body {
   overflow-y: hidden !important; }
-
-#botonmenu {
-  width: 40px;
-  height: 40px;
-  position: fixed !important;
-  right: 0;
-  top: 0; }
-
-#menu {
-  display: none;
-  flex-flow: column;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 60%;
-  height: 70%;
-  background-color: #1e1daa; }
-  #menu a {
-    color: white;
-    text-decoration: none;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: bold; }
-
-h2 {
-  text-align: center;
-  font-size: 25px; }
 
 #principal {
   background-image: url("../image/fondo-pequenio.jpg");
@@ -51,11 +22,57 @@ h2 {
     text-align: center;
     padding: 15px; }
 
+#botonmenu {
+  background-color: rgba(204, 204, 204, 0.91);
+  border-radius: 5px 5px;
+  height: 40px;
+  position: fixed !important;
+  right: 0;
+  top: 0;
+  width: 40px; }
+
+#menu {
+  display: none;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 70%;
+  background-color: #1e1daa; }
+  #menu p {
+    margin: 0; }
+  #menu a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+    width: 100%; }
+    #menu a:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: all 0.7s; }
+
+.ajustar div {
+  display: inline-block;
+  vertical-align: top; }
+.ajustar .texto {
+  text-align: justify;
+  padding: 2px; }
+
+h2 {
+  text-align: center;
+  font-size: 25px; }
+
 #mifoto {
   background-image: url("../image/mifoto.jpg");
   background-size: 100% 100%;
   border: solid 1px black;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 1px 1px 1px white;
   height: 125px;
   width: 125px;
@@ -76,6 +93,10 @@ h2 {
     flex-flow: row;
     width: 100%;
     height: 70px; }
+    #menu a {
+      border-radius: 10px;
+      padding: 20px;
+      width: auto; }
 
   #sobremi, #trabajos, #contacto {
     padding-top: 70px; }
@@ -86,6 +107,10 @@ h2 {
   #mifoto {
     height: 350px;
     width: 350px;
-    margin: 15px; } }
+    margin: 15px;
+    border-radius: 50px; }
+
+  .texto {
+    width: 70%; } }
 
 /*# sourceMappingURL=estilo.css.map */
