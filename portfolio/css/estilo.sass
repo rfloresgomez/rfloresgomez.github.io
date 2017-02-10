@@ -5,7 +5,7 @@ $borde-grande: 50px
 $borde-pequenio: 20px
 
 html
-  font-family: 'Droid Sans', sans-serif
+  font-family: 'Roboto Condensed', sans-serif
   background-color: $fondo-pagina
 
 
@@ -88,6 +88,21 @@ h2
   text-align: center
   font-size: 25px
 
+#lenguajes
+  display: flex
+  flex-flow: row
+  justify-content: space-around
+  align-items: center
+  h3
+    margin-top: 0
+  img
+    width: 50px
+    height: 50px
+
+.extra
+  display: none
+
+
 #trabajos
   background-color: rgba(109, 109, 109, 0.91)
 
@@ -100,12 +115,24 @@ h2
   border: solid 1px black
   border-radius: $borde-pequenio
   box-shadow: 1px 1px 1px white
-  height: 125px
-  width: 125px
-  margin: 15px
+  height: 100px
+  width: 100px
+  margin: 10px
+
+#redesSociales
+  display: flex
+  flex-flow: row
+  justify-content: space-around
+  align-items: center
+  img
+    width: 100px
+    height: 100px
 
 
 @media screen and (min-width: 768px)
+  html
+    font-size: 22px
+
   #principal
     background-image: url("../image/fondo.jpg")
     h1
@@ -114,6 +141,7 @@ h2
       padding-top: 30px
       padding-bottom: 30px
       font-size: 70px
+
   #menu
     display: flex
     flex-flow: row
@@ -127,8 +155,12 @@ h2
   #sobremi, #trabajos, #contacto
     padding-top: $margin
 
+  .extra
+    display: inline-block
+
   h2
-    font-size: 30px
+    font-size: 40px
+    font-weight: bold
 
   #mifoto
     height: 350px
@@ -137,4 +169,13 @@ h2
     border-radius: $borde-grande
 
   .texto
+    width: 60%
+
+  #redesSociales
+    img
+      width: 200px
+      height: 200px
+
+@media screen and (min-width: 1080px)
+  #textosobremi
     width: 70%
