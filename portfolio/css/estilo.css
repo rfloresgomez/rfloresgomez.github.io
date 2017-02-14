@@ -3,7 +3,8 @@ html {
   background-color: rgba(204, 204, 204, 0.91); }
 
 body {
-  overflow-y: hidden !important; }
+  overflow-y: hidden !important;
+  overflow-x: hidden !important; }
 
 #principal {
   background-image: url("../image/fondo-pequenio.jpg");
@@ -20,7 +21,8 @@ body {
     background-color: #1e1daa;
     opacity: 0.81;
     text-align: center;
-    padding: 15px; }
+    padding: 15px;
+    width: 100%; }
 
 #botonmenu {
   background-color: rgba(204, 204, 204, 0.91);
@@ -42,6 +44,9 @@ body {
   width: 60%;
   height: 70%;
   background-color: #1e1daa; }
+  @media (orientation: landscape) {
+    #menu {
+      height: 80%; } }
   #menu p {
     margin: 0; }
   #menu a {
@@ -57,24 +62,26 @@ body {
       background-color: rgba(0, 0, 0, 0.3);
       transition: all 0.7s; }
 
-.ajustar div {
+.ajustar article, .ajustar div {
   display: inline-block;
   vertical-align: top; }
 .ajustar .texto {
   text-align: justify;
   padding: 2px; }
+  @media screen and (max-width: 767px) and (orientation: landscape) {
+    .ajustar .texto {
+      width: 65%; } }
 
 h2 {
   text-align: center;
-  font-size: 25px; }
+  font-size: 25px;
+  margin: 0; }
 
 #lenguajes {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
   align-items: center; }
-  #lenguajes h3 {
-    margin-top: 0; }
   #lenguajes img {
     width: 50px;
     height: 50px; }
@@ -141,19 +148,39 @@ h2 {
     font-weight: bold; }
 
   #mifoto {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     margin: 15px;
-    border-radius: 50px; }
+    border-radius: 50px; } }
+  @media screen and (min-width: 768px) and (orientation: portrait) {
+    #mifoto {
+      height: 250px;
+      width: 250px; } }
 
+@media screen and (min-width: 768px) {
   .texto {
     width: 60%; }
+
+  #lenguajes img {
+    width: 70px;
+    height: 70px; }
 
   #redesSociales img {
     width: 200px;
     height: 200px; } }
 @media screen and (min-width: 1080px) {
+  html {
+    font-size: 25px; }
+
   #textosobremi {
-    width: 70%; } }
+    width: 70%; }
+
+  #mifoto {
+    height: 350px;
+    width: 350px; }
+
+  #lenguajes img {
+    width: 120px;
+    height: 120px; } }
 
 /*# sourceMappingURL=estilo.css.map */
