@@ -1,0 +1,84 @@
+// question: 2123  name: JQuery
+::JQuery::[html]Qu&eacute; elemento o elementos seleccionamos con $("*"){
+	~[moodle]Ninguno.
+	~[moodle]Aquellos que tengan el id *.
+	=[moodle]Todos los elementos.
+	~[moodle]Ninguna es correcta.
+}
+
+
+// question: 2124  name: JQuery
+::JQuery::[html]Qu&eacute; elemento o elementos seleccionamos con $("#principal"){
+	=[moodle]Aquellos cuyo id sea 'principal'.
+	~[moodle]Aquellos cuya clase sea 'principal'.
+	~[moodle]Aquellos que est&eacute;n dentro de un elemento cuyo id sea principal.
+	~[moodle]Ninguna es correcta.
+.
+}
+
+
+// question: 2126  name: JQuery
+::JQuery::[html]Qu&eacute; elemento o elementos seleccionamos con $(".enlace"){
+	~[moodle]Aquellos cuyo id sea 'enlca'.
+	=[moodle]Aquellos cuya clase sea 'enlace'.
+	~[moodle]Aquellos que est&eacute;n dentro de un elemento cuyo id sea 'enlace'.
+	~[moodle]Todos los enlaces.
+}
+
+
+// question: 2127  name: JQuery
+::JQuery::[html]Qu&eacute; elemento o elementos seleccionamos con $("p.negrita"){
+	~[moodle]Todos los p&aacute;rrafos.
+	~[moodle]El p&aacute;rrafo cuyo id es 'negrita'.
+	~[moodle]Todos los p&aacute;rrafos y los elementos cuya clase sea 'negrita';
+	=[moodle]Todos los p&aacute;rrafos cuya clase sea 'negrita'.
+}
+
+
+// question: 2129  name: JQuery
+::JQuery::[html]Qu&eacute; elemento o elementos seleccionamos con $(".negrita,.subrayado"){
+	=[moodle]Los elementos cuya clase sea 'negrita' o 'subrayado'.
+	~[moodle]Los elementos cuya clase sea 'negrita' y 'subrayado'.
+	~[moodle]Todas son falsas.
+	~[moodle]Los elementos cuyo id sea 'negrita' o 'subrayado'.
+}
+
+
+// question: 2131  name: JQuery
+::JQuery::[html]El selector ':first-child' selecciona los elementos que son el primer hijo de otro elemento.{TRUE}
+
+
+// question: 2132  name: JQuery
+::JQuery::[html]El selector ':animated' selecciona los elementos que forman parte de una animaci&oacute;n.{TRUE}
+
+
+// question: 2134  name: JQuery
+::JQuery::[html]El selector ':header' selecciona el elemento header.{FALSE}
+
+
+// question: 2136  name: JQuery
+::JQuery::[html]El selector ':contains()' selecciona los elementos que contienes el texto especificado.{TRUE}
+
+
+// question: 2122  name: JQuery
+::JQuery::[html]El selector ':empty' selecciona los elementos que no tienen contenido.{FALSE}
+
+
+// question: 2125  name: JQuery
+::JQuery::[html]El selector '[required]' selecciona los elementos que contienen el atributo 'required'.{TRUE}
+
+
+// question: 2128  name: JQuery
+::JQuery::[html]El selector '[name~=value]' selecciona todos los elementos que tengan el atributo con el valor dado.{TRUE}
+
+
+// question: 2130  name: JQuery
+::JQuery::[html]El selector '[name=value]' selecciona todos los elementos que tengan el atributo con el valor dado.{TRUE}
+
+
+// question: 2133  name: JQuery
+::JQuery::[html]El selector ':hidden' selecciona todos los elementos que están ocultos.{TRUE}
+
+
+// question: 2135  name: JQuery
+::JQuery::[html]El selector ':input' selecciona todos los elementos 'input'.{FALSE}
