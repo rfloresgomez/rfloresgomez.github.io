@@ -53,4 +53,14 @@ $(document).ready(function () {
         }
 
     });
+
+    $("#mistrabajos a").mouseover(function () {
+            $(this).css({
+                "opacity": "0.5",
+                "cursor": "pointer"});
+    });
+
+    $("#mistrabajos a").mouseout(function () {
+        $(this).css("opacity", "1");
+    });
 });

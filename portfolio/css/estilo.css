@@ -34,10 +34,11 @@ body {
   width: 40px; }
 
 #menu {
-  display: none;
+  display: flex;
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -90,10 +91,19 @@ h2 {
   display: none; }
 
 #trabajos {
-  background-color: rgba(109, 109, 109, 0.91); }
+  background-color: rgba(109, 109, 109, 0.91);
+  text-align: center; }
 
 #contacto {
-  background-color: rgba(45, 45, 45, 0.91); }
+  background-color: rgba(45, 45, 45, 0.91);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between; }
+  #contacto footer {
+    background-color: rgba(109, 109, 109, 0.91);
+    text-align: center;
+    font-size: 15px;
+    padding: 20px; }
 
 #mifoto {
   background-image: url("../image/mifoto.jpg");
@@ -113,6 +123,29 @@ h2 {
   #redesSociales img {
     width: 100px;
     height: 100px; }
+
+#mistrabajos {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  #mistrabajos a {
+    text-decoration: none;
+    color: white; }
+  #mistrabajos div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(45, 45, 45, 0.91);
+    border-radius: 20px; }
 
 @media screen and (min-width: 768px) {
   html {
@@ -166,14 +199,22 @@ h2 {
     height: 70px; }
 
   #redesSociales img {
-    width: 200px;
-    height: 200px; } }
-@media screen and (min-width: 1080px) {
-  html {
-    font-size: 25px; }
+    width: 250px;
+    height: 250px; }
 
+  #mistrabajos div {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 50px; }
+
+  footer {
+    margin-bottom: 70px;
+    padding: 20px; } }
+@media screen and (min-width: 1080px) {
   #textosobremi {
-    width: 70%; }
+    width: 65%; }
 
   #mifoto {
     height: 350px;

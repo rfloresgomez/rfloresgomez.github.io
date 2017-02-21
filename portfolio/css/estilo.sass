@@ -17,6 +17,18 @@ html
   opacity: 0.81
   text-align: center
 
+=flexHorizontal()
+  display: flex
+  flex-flow: column
+  justify-content: space-around
+  align-items: center
+
+=flexVertical()
+  display: flex
+  flex-flow: row
+  justify-content: space-around
+  align-items: center
+
 body
   overflow-y: hidden !important
   overflow-x: hidden !important
@@ -52,10 +64,8 @@ body
 
 
 #menu
+  +flexHorizontal
   display: none
-  flex-flow: column
-  justify-content: space-around
-  align-items: center
   position: fixed
   top: 0
   left: 0
@@ -95,10 +105,7 @@ h2
   margin: 0
 
 #lenguajes
-  display: flex
-  flex-flow: row
-  justify-content: space-around
-  align-items: center
+  +flexVertical
   img
     width: 50px
     height: 50px
@@ -109,9 +116,19 @@ h2
 
 #trabajos
   background-color: rgba(109, 109, 109, 0.91)
+  text-align: center
 
 #contacto
   background-color: rgba(45, 45, 45, 0.91)
+  display: flex
+  flex-flow: column
+  justify-content: space-between
+  footer
+    background-color: rgba(109, 109, 109, 0.91)
+    text-align: center
+    font-size: 15px
+    //margin-bottom: $margin
+    padding: 20px
 
 #mifoto
   background-image: url("../image/mifoto.jpg")
@@ -124,13 +141,27 @@ h2
   margin: 10px
 
 #redesSociales
-  display: flex
-  flex-flow: row
-  justify-content: space-around
-  align-items: center
+  +flexVertical
   img
     width: 100px
     height: 100px
+
+#mistrabajos
+  +flexVertical
+  flex-wrap: wrap
+  a
+    text-decoration: none
+    color: white
+  div
+    +flexVertical
+    justify-content: center
+    text-align: center
+    width: 100px
+    height: 100px
+    margin: 5px
+    padding: 5px
+    background-color: rgba(45, 45, 45, 0.91)
+    border-radius: $borde-pequenio
 
 
 @media screen and (min-width: 768px)
@@ -186,15 +217,25 @@ h2
 
   #redesSociales
     img
+      width: 250px
+      height: 250px
+
+  #mistrabajos
+    div
       width: 200px
       height: 200px
+      margin: 15px
+      padding: 15px
+      border-radius: $borde-grande
+
+  footer
+    margin-bottom: $margin
+    padding: 20px
+
 
 @media screen and (min-width: 1080px)
-  html
-    font-size: 25px
-
   #textosobremi
-    width: 70%
+    width: 65%
 
   #mifoto
     height: 350px
