@@ -25,6 +25,7 @@ body {
     width: 100%; }
 
 #botonmenu {
+  visibility: visible;
   background-color: rgba(204, 204, 204, 0.91);
   border-radius: 5px 5px;
   height: 40px;
@@ -38,12 +39,13 @@ body {
   flex-flow: column;
   justify-content: space-around;
   align-items: center;
-  display: none;
+  display: flex;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
-  width: 60%;
-  height: 70%;
+  width: 100%;
+  height: 45%;
   background-color: #1e1daa; }
   @media (orientation: landscape) {
     #menu {
@@ -54,7 +56,7 @@ body {
     color: white;
     font-size: 20px;
     font-weight: bold;
-    padding: 20px 0px;
+    padding: 10px 0;
     text-align: center;
     text-decoration: none;
     transition: all 0.5s;
@@ -108,9 +110,7 @@ h2 {
 #mifoto {
   background-image: url("../image/mifoto.jpg");
   background-size: 100% 100%;
-  border: solid 1px black;
-  border-radius: 20px;
-  box-shadow: 1px 1px 1px white;
+  border-radius: 100px;
   height: 100px;
   width: 100px;
   margin: 10px; }
@@ -151,6 +151,9 @@ h2 {
   html {
     font-size: 22px; }
 
+  #botonmenu {
+    visibility: hidden; }
+
   #principal {
     background-image: url("../image/fondo.jpg"); }
     #principal h1 {
@@ -161,7 +164,7 @@ h2 {
       font-size: 70px; }
 
   #menu {
-    display: flex;
+    visibility: visible;
     flex-flow: row;
     width: 100%;
     height: 70px; }
@@ -184,7 +187,7 @@ h2 {
     height: 300px;
     width: 300px;
     margin: 15px;
-    border-radius: 50px; } }
+    border-radius: 200px; } }
   @media screen and (min-width: 768px) and (orientation: portrait) {
     #mifoto {
       height: 250px;
@@ -203,8 +206,8 @@ h2 {
     height: 250px; }
 
   #mistrabajos div {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     margin: 15px;
     padding: 15px;
     border-radius: 50px; }

@@ -2,6 +2,12 @@
  * Created by btt_9 on 08/02/2017.
  */
 $(document).ready(function () {
+    $(window).keypress(function(e) {
+        if (e.keyCode == 38 || e.keyCode == 40 || e.keyCode == 34 || e.keyCode == 33 || e.keyCode == 35 || e.keyCode == 36) {
+            e.preventDefault();
+        }
+    });
+
     $(".ajustar").css("height", window.innerHeight);
 
     $(window).resize(function () {
@@ -16,9 +22,9 @@ $(document).ready(function () {
             visto = false;
         }else{
             nav.css({
-                display: function(){
+                visibility: function(){
                     nav.fadeIn(500);
-                    return "flex";
+                    return "visible";
                 }
             });
             visto = true;
@@ -28,8 +34,8 @@ $(document).ready(function () {
 
     $('a').click(function() {
 
-        if(visto){
-            nav.fadeOut(300);
+        if(visto) {
+            nav.fadeOut(500);
             visto = false;
         }
 
