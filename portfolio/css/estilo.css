@@ -1,6 +1,7 @@
 html {
   font-family: "Roboto Condensed", sans-serif;
-  background-color: rgba(204, 204, 204, 0.91); }
+  background-color: rgba(204, 204, 204, 0.91);
+  font-size: 40px; }
 
 body {
   overflow-y: hidden !important;
